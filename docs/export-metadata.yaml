@@ -1,0 +1,67 @@
+title: Målarkitektur för AI i statlig myndighet
+subtitle: En praktisk handbok för att etablera säker, styrd och skalbar AI-förmåga
+author: Erland Lindmark
+language: sv
+difficulty: experienced-advanced
+audience: Erfarna IT-arkitekter inom större statliga myndigheter
+book_type: practical-handbook-textbook
+edition: '1'
+version: '3.3'
+date: '2026-06-02'
+rights: All rights reserved
+publisher: ''
+cover_image: assets/cover/cover.png
+identifier: urn:uuid:f991e46f-e50a-426b-95f8-1054e71d2e5e
+creator_role: aut
+subject: AI, målarkitektur, offentlig sektor, IT-arkitektur
+description: En praktisk, slutredigerad, faktaverifierad och omslagsförberedd handbok
+  med appendix för kommersiella AI-plattformar, open source och beslutsmatriser.
+project_slug: malarkitektur-ai-statlig-myndighet
+zip_naming:
+  initial: malarkitektur-ai-statlig-myndighet-projekt.zip
+  chapter_update: malarkitektur-ai-statlig-myndighet-projekt-kapitel-NN.zip
+chapters:
+- chapters/00-inledning.md
+- chapters/fran-ai-experiment-till-myndighetsgemensam-ai-formaga-01.md
+- chapters/vad-malarkitektur-betyder-for-ai-02.md
+- chapters/ai-portfoljen-vilka-anvandningsfall-ska-myndigheten-stodja-03.md
+- chapters/juridik-ansvar-och-regelefterlevnad-04.md
+- chapters/informationsklassning-dataskydd-och-riskstyrning-05.md
+- chapters/arkitekturprinciper-for-offentlig-ai-06.md
+- chapters/governance-och-beslutsmodell-for-ai-07.md
+- chapters/formagekarta-for-ai-i-myndigheten-08.md
+- chapters/dataarkitektur-for-ai-09.md
+- chapters/teknisk-referensarkitektur-10.md
+- chapters/generativ-ai-rag-och-kunskapsstod-11.md
+- chapters/mlops-llmops-och-livscykelhantering-12.md
+- chapters/moln-on-premises-och-hybrid-en-beslutsmodell-13.md
+- chapters/plattformar-produkter-och-ramverk-att-overvaga-14.md
+- chapters/nar-man-valjer-vad-15.md
+- chapters/sakerhetsarkitektur-for-ai-16.md
+- chapters/upphandling-och-leverantorsstyrning-17.md
+- chapters/roadmap-fran-nulage-till-etablerad-ai-formaga-pa-24-manader-18.md
+- chapters/malarkitektur-for-tullverket-aurora-19.md
+- chapters/vanliga-misstag-och-anti-patterns-20.md
+- chapters/arkitektens-checklistor-och-beslutsmallar-21.md
+- chapters/appendix-a-kommersiella-ai-plattformar-och-molntjanster.md
+- chapters/appendix-b-open-source-modeller-ramverk-och-egen-drift.md
+- chapters/appendix-c-beslutsmatriser-och-urvalsmallar.md
+exports:
+  epub:
+    enabled: true
+    include_text_toc: false
+    airy_layout: true
+    render_markdown_styles: true
+  pdf:
+    enabled: true
+    include_toc_before_introduction: true
+    render_markdown_styles: true
+    toc_depth: 1
+    clickable_toc: true
+    chapter_headings_two_line_centered: true
+  docx:
+    enabled: true
+    render_markdown_styles: true
+  markdown:
+    enabled: true
+cover_image_marketplace: assets/cover/cover-marketplace.jpg

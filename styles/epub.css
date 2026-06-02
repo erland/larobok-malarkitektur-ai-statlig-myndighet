@@ -1,0 +1,121 @@
+body {
+  font-family: serif;
+  line-height: 1.65;
+  margin: 5%;
+  font-size: 1.05em;
+}
+
+p {
+  margin: 0 0 0.9em 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.35em;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+ul, ol {
+  margin-top: 0.7em;
+  margin-bottom: 0.9em;
+}
+
+li {
+  margin-bottom: 0.35em;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 0.2em solid #888;
+}
+
+code {
+  font-family: monospace;
+}
+
+pre {
+  padding: 0.8em;
+  overflow-x: auto;
+  background: #f5f5f5;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 0.45em;
+  vertical-align: top;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* EPUB title page */
+.titlepage {
+  text-align: center;
+  margin: 28% 8% 0 8%;
+}
+
+.titlepage h1.title {
+  text-align: center;
+  font-size: 2.0em;
+  line-height: 1.2;
+  margin: 0 0 1.0em 0;
+  page-break-before: auto;
+}
+
+.titlepage .subtitle {
+  text-align: center;
+  font-size: 1.15em;
+  line-height: 1.35;
+  margin: 0 0 2.0em 0;
+  font-style: italic;
+}
+
+.titlepage .author {
+  text-align: center;
+  font-size: 1.15em;
+  margin-top: 2.0em;
+}
+
+
+/* Kapitelrubriker i EPUB: behåll TOC-texten, men visa själva kapitlets H1 på två centrerade rader. */
+h1.chapter-heading {
+  text-align: center;
+  line-height: 1.22;
+  margin-top: 0.9em;
+  margin-bottom: 0.7em;
+  page-break-before: auto;
+  break-before: auto;
+}
+
+h1.chapter-heading .chapter-number {
+  display: block;
+  font-size: 0.78em;
+  font-weight: normal;
+  margin-bottom: 0.15em;
+}
+
+h1.chapter-heading .chapter-title {
+  display: block;
+}

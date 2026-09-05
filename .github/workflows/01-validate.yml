@@ -1,0 +1,36 @@
+name: Validate
+
+on:
+  pull_request:
+    paths:
+      - "chapters/**"
+      - "assets/**"
+      - "styles/**"
+      - "scripts/**"
+      - "docs/export-metadata.yaml"
+      - "book.yaml"
+      - ".github/workflows/**"
+  push:
+    branches: [main]
+    paths:
+      - "chapters/**"
+      - "assets/**"
+      - "styles/**"
+      - "scripts/**"
+      - "docs/export-metadata.yaml"
+      - "book.yaml"
+      - ".github/workflows/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install validation dependency
+        run: python3 -m pip install --disable-pip-version-check pyyaml
+      - name: Validate project and build combined Markdown
+        run: python3 scripts/export-book.py --format markdown
